@@ -104,9 +104,10 @@ The following assumptions are made about your environment:
 
     DEBUG=False
     DJANGO_SECRET_KEY=YOUR_KEY
+    DJANGO_SETTINGS_MODULE=config.settings.production
     DJANGO_ALLOWED_HOSTS=demo-django.YOUR_CAPROVER_DOMAIN,CUSTOM_DOMAIN
     DATABASE_URL=postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@${POSTGRES_HOST}:${POSTGRES_PORT}/${POSTGRES_DB}
-    REDIS_URL=YOUR_REDIS_APP_URL
+    REDIS_URL=http://redis_app_name:6379/?password=your_password
     EMAIL_HOST_USER=YOUR_GMAIL_APP_USER
     EMAIL_HOST_PASSWORD=YOUR_GMAIL_APP_PASSWORD
 
