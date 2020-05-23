@@ -23,4 +23,5 @@ RUN pip install pip --upgrade
 RUN pip install --no-cache-dir -r requirements/production.txt
 
 # run script to run server
+EXPOSE 80
 CMD sh /usr/src/app/runserver.sh
