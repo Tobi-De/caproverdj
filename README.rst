@@ -108,7 +108,7 @@ The following assumptions are made about your environment:
     DJANGO_ADMIN_URL=A_RANDOM_LONG_URL(not admin/)
     DJANGO_ALLOWED_HOSTS=YOUR_APP_DOMAIN_NAME
     DATABASE_URL=postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@${POSTGRES_HOST(app name)}:${POSTGRES_PORT}/${POSTGRES_DB}
-    REDIS_URL=redis://redis_app_name:6379/?password=your_password
+    REDIS_URL=redis://:password@${host_name}:6379
     EMAIL_HOST_USER=YOUR_GMAIL_APP_USER
     EMAIL_HOST_PASSWORD=YOUR_GMAIL_APP_PASSWORD
 
