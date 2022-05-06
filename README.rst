@@ -1,7 +1,7 @@
 caproverdj
 ==========
 
-A basic web app to help configure caprover with django
+A basic web app to showcase django deployment with caprover
 
 .. image:: https://img.shields.io/badge/built%20with-Cookiecutter%20Django-ff69b4.svg
      :target: https://github.com/pydanny/cookiecutter-django/
@@ -100,17 +100,17 @@ The following assumptions are made about your environment:
 - same process for the redis app but only fill the name form
 
 - Create a new blank app with the name `demo-django`
-- Fill the environment variables below and enter them with the bulk edit mode::
+- In the App Configs tab, toggle the bulk edit for environment variables and then paste the section below. Fill in the values in bracket. The app name is the name provided by caprover, it usually starts with **srv-**.
 
-    DJANGO_DEBUG=False
-    DJANGO_SECRET_KEY=YOUR_SECRET_KEY
-    DJANGO_SETTINGS_MODULE=config.settings.production
-    DJANGO_ADMIN_URL=A_RANDOM_LONG_URL
-    DJANGO_ALLOWED_HOSTS=YOUR_APP_DOMAIN_NAME
-    DATABASE_URL=postgresql://{postgres_user}:{postgres_pass}@{postgres_app_name}:5432/{postgres_db_name}
-    REDIS_URL=redis://:{redis_password}@{redis_app_name}:6379
-    EMAIL_HOST_USER=YOUR_GMAIL_APP_USER
-    EMAIL_HOST_PASSWORD=YOUR_GMAIL_APP_PASSWORD
+   DJANGO_DEBUG=False
+   DJANGO_SECRET_KEY=YOUR_SECRET_KEY
+   DJANGO_SETTINGS_MODULE=config.settings.production
+   DJANGO_ADMIN_URL=A_RANDOM_LONG_URL
+   DJANGO_ALLOWED_HOSTS=YOUR_APP_DOMAIN_NAME
+   DATABASE_URL=postgresql://{postgres_user}:{postgres_pass}@{postgres_app_name}:5432/{postgres_db_name}
+   REDIS_URL=redis://:{redis_password}@{redis_app_name}:6379
+   EMAIL_HOST_USER=YOUR_GMAIL_APP_USER
+   EMAIL_HOST_PASSWORD=YOUR_GMAIL_APP_PASSWORD
 
 
 3) Django
